@@ -4,10 +4,10 @@
 
     </head>
     <body>
-        <p>Ejemplo de Formulario Simple de Generacion de Ticket</p>
+        <p>Ejemplo de Formulario Simple</p>
         <form action="procesar.php" method="post">
              <table border="0">
-                <tr bgcolor="A62323">
+                <tr bgcolor="#E67760">
                     <th>
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre">
@@ -23,7 +23,12 @@
                         <input type="date" id="fecha" name="fecha">
                     </th>
                     <th>
-                        <label for="color">Color favorito</label>
+                        <label for="color">Color de urgencia de su problema 
+                            Verde: Baja
+                            Amarillo: Media
+                            Naranja: Alta
+                            Rojo: Urgente
+                        </label>
                         <input type="color" id="color" name="color">
                     </th>
 
@@ -35,12 +40,12 @@
                         <input type="radio" id="f" name="genero" value="F"><label for="m">Femenino</label>
                     </td>
                     <td>
-                        <label for="pais">Pais</label>
-                        <select id="pais"name="pais">
+                        <label for="Sucursal">Sucursal en la que se encuentra</label>
+                        <select id="Sucursal"name="Sucursal">
                             <option value="">Seleccione ...</option>
-                            <option value="">Ecuador</option>
-                            <option value="">Mexico</option>
-                            <option value="">Venezuela</option>
+                            <option value="">Note/Quito</option>
+                            <option value="">Centro/Quito</option>
+                            <option value="">Sur/Quito</option>
                         </select>
                     </td>
 
