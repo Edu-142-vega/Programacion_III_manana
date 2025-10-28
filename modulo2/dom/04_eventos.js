@@ -7,3 +7,11 @@ document.getElementById('crear').addEventListener('click',()=>{
 document.getElementById('eliminar').addEventListener('click',()=>{
     if (parrafo) parrafo.remove();
 })
+function saludar(){
+    alert("Hola desde la funcion")
+}
+
+document.getElementById('nombre')
+     .addEventListener('input',(e)=>{
+     console.log("Escribiendo", e.target.value)
+     })
