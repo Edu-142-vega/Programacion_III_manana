@@ -1,13 +1,17 @@
-import { Vehiculo, Moto } from "./11_herencia";
+export class Vehiculo {
+    public marca: string;
+    public tipo: string;
+    constructor( 
+        marca: string,
+        tipo: string
+    ){
+        this.marca=marca;
+        this.tipo=tipo;
+        
+    }
+    moverse(): void{
+        console.log('vehiculo en movimiento');
+    }
+}
 
-const miCarro = new Vehiculo('Toyota', 'Sedan');
-console.log(miCarro.marca);
-console.log(miCarro.tipo);
-miCarro.moverse();
-
-
-const miMotocicleta = 
-    new Moto('Honda', 'Alta Cilindrada');
-console.log(miMotocicleta.marca);
-console.log(miMotocicleta.tipo);
-miMotocicleta.moverse();
+export class Moto extends Vehiculo {}
