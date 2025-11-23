@@ -1,7 +1,7 @@
 function saludarts(nombre?: string): string {
     return `Bienvenido ${nombre} al Sistema de Soporte Técnico`;
 }
-console.log(saludar('Carlos'));
+console.log(saludarts('Carlos'));
 var sumar = (a: number, b: number): number => {
     return a + b;
 }
