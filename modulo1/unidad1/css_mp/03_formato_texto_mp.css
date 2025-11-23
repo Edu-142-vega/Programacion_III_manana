@@ -11,6 +11,7 @@
     word-spacing: 5px;
     white-space: nowrap;
 }
+
 .texto_secundario {
     color: #ffffff;
     background-color: rgb(177, 148, 114);
@@ -18,7 +19,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
     line-height: 1;
-  
     text-transform: lowercase;
     letter-spacing: 1px;
     word-spacing: 1px;

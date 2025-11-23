@@ -2,55 +2,33 @@
 <head>
 </head>    
 <body>
-    <p>Formulario de reserva del Restaurante Cumbre</p>
+    <p>Formulario de Solicitud de Soporte Técnico</p>
+
     <form action="procesar.php" method="post">
-         <table border="0">
-            <th>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
-            </th>
-            <th>
-                <label for="correo">Correo Electronico</label>
-                <input type="email" id="correo" name="correo">
-            </th>
-            <th>
-                <label for="fecha">Día que desea reservar:</label>
-                <input type="date" id="fecha" name="fecha">
-            </th>
-            <th>
-                <label for="color">Color Favorito</label>
-                <input type="color" id="color" name="color">
-            </th>
-        <tr>
-            <td>
-                <label for="tipo_reserva">Tipo de reserva</label>
-                <input type="radio" id="n" name="tipo_reserva" value="N"><label for="m">Normal</label>
-                <input type="radio" id="v" name="tipo_reserva" value="V"><label for="f">VIP</label>
-            </td>
-                
-            <td>
-                <label for="numero_mesa">Mesa para:</label>
-                <select id="mesa" name="mesa">
-                    <option value="">Seleccione...</option>
-                    <option value="individual">Individual</option>
-                    <option value="dos">2 personas</option>
-                    <option value="tres">3 personas</option>
-                    <option value="cuatro">4 personas</option>
-                    <option value="Familiar">Familiar (5 o más)</option>
-            </td>
-        </tr>
-         <td>
-                <label for="comentarios">Comentarios</label>
-                <textarea id="comentarios" name="comentarios" rows="5"></textarea>
-            </td>
-            <td>
-                <input type="checkbox" id="acepto" name="acepto"> required>
-                <label for="acepto">Acepto de terminos y condiciones</label>
-            </td>
-         </table>
-         <input type="submit" value="Enviar">
-         <input type ="reset" value="Limpiar">
-         
-    </form>
-</body>
-</html>
+        <table border="0">
+
+            <tr>
+                <th>
+                    <label for="nombre">Nombre del Usuario</label>
+                    <input type="text" id="nombre" name="nombre">
+                </th>
+
+                <th>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo">
+                </th>
+
+                <th>
+                    <label for="fecha">Fecha del Reporte</label>
+                    <input type="date" id="fecha" name="fecha">
+                </th>
+
+                <th>
+                    <label for="color">Color de Identificación del Ticket</label>
+                    <input type="color" id="color" name="color">
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tipo_ticket">Tipo de Ticket</label><br>
