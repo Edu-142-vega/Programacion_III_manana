@@ -1,51 +1,59 @@
-console.log("OBJETOS DEL RESTAURANTE CUMBRE");
-let plato = {
-    nombre: "Ceviche Mixto",
-    precio: 12.50,
-    categoria: "Mariscos"
+console.log("OBJETOS DEL SISTEMA DE SOPORTE TÉCNICO");
+
+let ticket = {
+    numero: "Ticket 101",
+    prioridad: "Alta",
+    categoria: "Hardware"
 };
 
-console.log(plato);
-console.log(plato.nombre);
-console.log(plato.categoria);
-console.log(plato["precio"]);
+console.log(ticket);
+console.log(ticket.numero);
+console.log(ticket.categoria);
+console.log(ticket["prioridad"]);
 
 console.log("Modificación de una clave del objeto");
-plato.nombre = "Ceviche Especial";
-console.log(plato);
+ticket.numero = "Ticket 150";
+console.log(ticket);
+
 console.log("Incluir clave al objeto");
-plato.disponible = true;
-console.log(plato);
+ticket.asignado = "Técnico Juan Pérez";
+console.log(ticket);
+
 console.log("Eliminar clave del objeto");
-delete plato.disponible;
-console.log(plato);
+delete ticket.asignado;
+console.log(ticket);
 
 console.log("Recorrer un objeto");
-for(let clave in plato){
+for(let clave in ticket){
     console.log(clave);
 }
+
 console.log("Mostrar claves con Object.keys");
-console.log(Object.keys(plato));
+console.log(Object.keys(ticket));
+
 console.log("Mostrar valores con Object.values");
-console.log(Object.values(plato));
+console.log(Object.values(ticket));
+
 console.log("Objetos Anidados");
-let menu = {
-    nombre: "Menú del Día",
-    chef: "Carlos Ramírez",
+
+let sistema = {
+    nombre: "Gestor de Tickets",
+    administrador: "Carlos Ramírez",
     detalles:{
-        tipo: "Almuerzo Ejecutivo",
-        horario: "12:00 - 15:00",
-        ubicacion: "Restaurante Cumbre - Quito"
+        tipo: "Soporte Técnico",
+        horario: "08:00 - 18:00",
+        ubicacion: "Quito - Oficina Central"
     },
-    platos:[
+    tickets:[
         {
-            nombre: "Arroz con camarones",
-            precio: 10.50 
+            numero: "Ticket 201",
+            prioridad: "Media"
         },
         {
-            nombre: "Filete de pollo a la plancha",
-            precio: 9.00
-        },
+            numero: "Ticket 305",
+            prioridad: "Alta"
+        }
     ]
 };
-console.log("Menú: ", menu);
+
+console.log("Sistema: ", sistema);

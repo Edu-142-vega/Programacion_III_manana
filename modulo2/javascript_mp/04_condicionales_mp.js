@@ -1,72 +1,79 @@
 let temperatura = 35;
 
-if(temperatura>30){
-    console.log("Hace calor, recomendamos terraza en Cumbre");
+if (temperatura > 30) {
+    console.log("La temperatura del equipo es alta, recomendamos revisión inmediata");
 }
 
 let clave_acceso = "cumbre2023";
-if(clave_acceso==="cumbre2023"){
-    console.log("Acceso concedido al sistema de Cumbre");
-} else{
-    console.log("Acceso denegado al sistema de Cumbre");
+if (clave_acceso === "cumbre2023") {
+    console.log("Acceso concedido al sistema de soporte técnico");
+} else {
+    console.log("Acceso denegado al sistema de soporte técnico");
 }
 
 let calificacion_cliente = 7;
-if(calificacion_cliente>=9){
-    console.log("Excelente experiencia en Cumbre");
-} else if (calificacion_cliente>=6) {
-    console.log("Buena experiencia en Cumbre");
+if (calificacion_cliente >= 9) {
+    console.log("El cliente evaluó: Excelente servicio técnico");
+} else if (calificacion_cliente >= 6) {
+    console.log("El cliente evaluó: Buen servicio técnico");
 } else {
-    console.log("Mejoraremos en Cumbre");
+    console.log("El cliente evaluó: Se requiere mejorar el soporte");
 }
-
 
 let edad_cliente = 20;
 let tiene_identificacion = true;
-if (edad_cliente>=18){
-    if(tiene_identificacion){
-        console.log("Puede ordenar bebidas alcoholicas en Cumbre");
+
+if (edad_cliente >= 18) {
+    if (tiene_identificacion) {
+        console.log("Puede registrar un ticket avanzado en el sistema");
     } else {
-        console.log("Necesita identificacion para bebidas alcoholicas en Cumbre");
+        console.log("Necesita identificación para registrar ciertos tipos de tickets");
     }
 } else {
-    console.log("Es menor de edad para bebidas alcoholicas en Cumbre");
+    console.log("Acceso limitado para tickets avanzados por menor edad");
 }
 
 // Estructura Switch
 let dia_semana = "lunes";
-switch(dia_semana){
+
+switch (dia_semana) {
     case "lunes":
-        console.log("Especial de lunes en Cumbre: Pasta");
+        console.log("Recordatorio: Mantenimiento general de sistemas");
         break;
     case "viernes":
-        console.log("Especial de viernes en Cumbre: Mariscos");
+        console.log("Actividad programada: Respaldo de bases de datos");
         break;
     default:
-        console.log("Menu regular en Cumbre");
+        console.log("Día normal de soporte técnico");
 }
 
-let precio_plato1 = 20;
-let precio_plato2 = 30;
-let precio_plato3 = 60;
-switch(precio_plato3){
-    case(precio_plato3):
-        console.log("Plato premium en Cumbre");
+let nivel1 = 20;
+let nivel2 = 30;
+let nivel3 = 60;
+
+switch (nivel3) {
+    case (nivel3):
+        console.log("Ticket de prioridad crítica");
         break;
-    case(precio_plato1):
-        console.log("Plato economico en Cumbre");
+    case (nivel1):
+        console.log("Ticket de prioridad baja");
         break;
     default:
-        console.log("Plato estandar en Cumbre")
+        console.log("Ticket de prioridad estándar");
 }
 
-let precio_pasta = 30;
-let precio_carne = 40;
-let precio_mariscos = 50;
-mayor_precio = 0;
-if (precio_pasta > precio_carne){
-    mayor_precio = precio_pasta;
-} if(precio_mariscos > mayor_precio){
-    mayor_precio = precio_mariscos;
+let tiempo_diagnostico = 30;
+let tiempo_reparacion = 40;
+let tiempo_pruebas = 50;
+
+let mayor_tiempo = 0;
+
+if (tiempo_diagnostico > tiempo_reparacion) {
+    mayor_tiempo = tiempo_diagnostico;
 }
-console.log("El plato mas caro en Cumbre es" , mayor_precio);
+
+if (tiempo_pruebas > mayor_tiempo) {
+    mayor_tiempo = tiempo_pruebas;
+}
+
+console.log("La fase que más tiempo toma es:", mayor_tiempo, "minutos");

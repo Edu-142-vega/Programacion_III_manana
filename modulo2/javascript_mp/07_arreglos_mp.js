@@ -1,45 +1,56 @@
-console.log("ARRAYS DEL RESTAURANTE CUMBRE");
-let platos = ["Ceviche", "Arroz con mariscos", "Lomo saltado", "Ensalada César"];
-let menuVacio = new Array();
-let menuVacio2 = [];
-console.log("Menú original", platos);
-console.log(menuVacio);
-console.log(menuVacio2);
-console.log("Acceso a los elementos del menú");
-console.log(platos[0]);
-console.log(platos[3]);
+console.log("ARRAYS DEL SISTEMA DE SOPORTE TÉCNICO");
 
-console.log("Modificar elementos del menú");
-platos[0] = "Sopa marinera";
-console.log(platos);
-console.log("Agregar plato al menú");
-platos.push("Parrillada mixta");
-console.log(platos);
-console.log("Agregar plato al inicio del menú");
-platos.unshift("Camarones apanados");
-console.log(platos);
-console.log("Eliminar el último plato del menú");
-platos.pop();
-console.log("Eliminar el primer plato del menú");
-platos.shift();
-console.log(platos);
+let tickets = ["Ticket 101", "Ticket 102", "Ticket 103", "Ticket 104"];
+let listaVacia = new Array();
+let listaVacia2 = [];
 
-console.log("Iteración del menú");
+console.log("Lista original de tickets", tickets);
+console.log(listaVacia);
+console.log(listaVacia2);
+
+console.log("Acceso a los elementos de la lista");
+console.log(tickets[0]);
+console.log(tickets[3]);
+
+console.log("Modificar elementos de la lista");
+tickets[0] = "Ticket 200";
+console.log(tickets);
+
+console.log("Agregar ticket a la lista");
+tickets.push("Ticket 300");
+console.log(tickets);
+
+console.log("Agregar ticket al inicio");
+tickets.unshift("Ticket 001");
+console.log(tickets);
+
+console.log("Eliminar el último ticket");
+tickets.pop();
+
+console.log("Eliminar el primer ticket");
+tickets.shift();
+console.log(tickets);
+
+console.log("Iteración de tickets");
 let indice = 0;
+
 console.log("Iteración con While");
-while(indice < platos.length){
-    console.log("Plato", indice, "es", platos[indice]);
+while(indice < tickets.length){
+    console.log("Ticket", indice, "es", tickets[indice]);
     indice++;
 }
+
 console.log("Iteración con For");
-for (let i = 0; i < platos.length; i++){
-    console.log(platos[i]);
+for (let i = 0; i < tickets.length; i++){
+    console.log(tickets[i]);
 }
+
 console.log("Iteración con For ... of");
-for (let plato of platos){
-    console.log(plato);
+for (let ticket of tickets){
+    console.log(ticket);
 }
-console.log("Iteración con For Each");
-platos.forEach(function(plato, indice){
-    console.log(indice, plato);
+
+console.log("Iteración con ForEach");
+tickets.forEach(function(ticket, indice){
+    console.log(indice, ticket);
 });

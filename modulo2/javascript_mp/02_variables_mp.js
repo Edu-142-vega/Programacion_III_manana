@@ -1,41 +1,45 @@
-console.log("VARIABLES - RESTAURANTE CUMBRE");
+console.log("VARIABLES - SISTEMA DE SOPORTE TÉCNICO");
 
-saludo="Bienvenido al restaurante Cumbre"
-console.log("Mensaje del restaurante:",saludo);
-console.log("Categoria del dato:", typeof(saludo)); 
+// String
+saludo = "Bienvenido al sistema de soporte técnico";
+console.log("Mensaje del sistema:", saludo);
+console.log("Categoría del dato:", typeof(saludo));
 
-numero=3
-console.log("Cantidad de platos en el menú:",numero);
-console.log("Categoria del dato:", typeof(numero));
+// Number
+numero = 3;
+console.log("Cantidad de tickets abiertos:", numero);
+console.log("Categoría del dato:", typeof(numero));
 
-booleana=true
-console.log("Estado del Restaurante (abierto/cerrado):",booleana);
-console.log("Categoria del dato:", typeof(booleana));
+// Boolean
+booleana = true;
+console.log("Sistema en línea:", booleana);
+console.log("Categoría del dato:", typeof(booleana));
 
+// Undefined
+indefinida = undefined;
+console.log("Ticket asignado aún sin técnico:", indefinida);
+console.log("Categoría del dato:", typeof(indefinida));
 
-indefinida=undefined
-console.log("Plato del día aún sin definir:",indefinida);
-console.log("Categoria del dato:", typeof(indefinida));
-
-
-nula=null
-console.log("Reserva actual:",nula);
+// Null
+nula = null;
+console.log("Técnico actual para el ticket:", nula);
 console.log("Categoría del dato:", typeof(nula));
 
-
-bigentero=202510190001n
-console.log("Número de registro del Restaurante:",bigentero);
+// BigInt
+bigentero = 202510190001n;
+console.log("Número de registro del sistema:", bigentero);
 console.log("Categoría del dato:", typeof(bigentero));
 
-menu = {
-    entrada: "Ensalada de la casa",
-    platoFuerte: "Lomo al vino tinto",
-    postre: "Cheesecake de frutos rojos"
-}
-console.log("Variable Objeto", menu)
-console.log("Tipo de variable", typeof(meu));
+// Objeto
+ticket = {
+    cliente: "Carlos Ramírez",
+    problema: "La laptop no enciende",
+    prioridad: "Alta"
+};
+console.log("Variable Objeto:", ticket);
+console.log("Tipo de variable:", typeof(ticket));
 
-precios = [5.50, 12.99, 4.75]
-console.log("Variable Array", precios);
-console.log("Tipo de variable", typeof(precios));
-
+// Array
+prioridades = ["Alta", "Media", "Baja"];
+console.log("Variable Array:", prioridades);
+console.log("Tipo de variable:", typeof(prioridades));

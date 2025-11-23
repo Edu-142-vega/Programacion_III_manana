@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulación de Estilos – Ticket</title>
+  <style>
+    #cuadro {
+      width: 100px;
+      height: 100px;
+      background-color: #58a6ff;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estado Visual del Ticket</h1>
+  <div id="cuadro"></div>
+  <div style="margin-top:20px;">
+    <button onclick="cambiarColor()"> Cambiar Estado</button>
+    <button onclick="aumentarTamano()">Ampliar Indicador</button>
+    <button onclick="reiniciar()">Reiniciar Estado</button>
+  </div>
+
+  <script src="09_estilos_MP.js"></script>
+</body>
+</html>

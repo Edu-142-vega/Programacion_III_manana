@@ -1,1 +1,2 @@
-console.log("Archivo externo de restaurante Cumbre");
+console.log("Archivo externo del Sistema de Soporte Técnico");
+

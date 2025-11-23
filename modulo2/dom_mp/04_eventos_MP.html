@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="04_eventos_MP.js" defer></script>
+</head>
+<body>
+    <div id="contenedor"></div>
+
+    <button id="crear">Crear Ticket</button>
+    <button id="eliminar">Eliminar Ticket</button>
+
+    <button 
+        onclick="alert('Ticket generado con JavaScript inline')">
+        Generar Ticket (inline)
+    </button>
+
+    <button 
+        onclick="saludar()">
+        Saludo desde función
+    </button>
+
+    <p id="parrafo">Doble click para actualizar estado del ticket</p>
+
+    <form id="formulario" style="margin-top: 20px;">
+        <input type="text" id="nombre"
+            placeholder="Nombre del cliente"
+        />
+        <button type="submit">Registrar</button> 
+    </form>
+</body>
+</html>
