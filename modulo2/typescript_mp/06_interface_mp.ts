@@ -3,6 +3,7 @@ import { Empleado } from "./05_interface_mp";
 const primer_empleado : Empleado = {
     id: 12,
     nombre: 'Juan Pérez',
+    correo: 'juanperez@soportetech.com'
 }
 const segundo_empleado: Empleado = {
     id: 13,

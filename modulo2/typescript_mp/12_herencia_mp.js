@@ -9,6 +9,6 @@ console.log(miTicket.tipo);
 miTicket.servirse();
 
 var miTicketSecundario = new _11_herencia_mp_1.TicketSecundario('Instalación de Software', 'Software');
-console.log(miTicketSenundario.nombre);
+console.log(miTicketSecundario.nombre);
 console.log(miTicketSecundario.tipo);
 miTicketSecundario.servirse();

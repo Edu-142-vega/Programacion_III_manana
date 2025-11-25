@@ -1,4 +1,4 @@
-import { Ticket, TicketSecundario } from "./11_herencia_mp";
+import { Ticket, TicketSecundario } from "./11_herencia_mp.js";
 
 const miTicket = new Ticket('Revisión de Laptop', 'Hardware');
 console.log(miTicket.nombre);

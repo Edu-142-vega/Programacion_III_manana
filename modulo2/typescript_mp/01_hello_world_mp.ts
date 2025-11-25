@@ -1,2 +1,2 @@
-var mensaje: string = "Bienvenido al Restaurante Cumbre";
+var mensaje: string = "Bienvenido al TECH SUPORT";
 console.log(mensaje);

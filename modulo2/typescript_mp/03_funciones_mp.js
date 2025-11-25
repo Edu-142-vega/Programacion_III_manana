@@ -1,5 +1,5 @@
 function saludar(nombre) {
-    return "Bienvenido ".concat(nombre, " al Sistema de Soporte Técnico");
+    return "Bienvenido " + nombre + " al Sistema de Soporte Técnico";
 }
 console.log(saludar('Carlos'));
 
@@ -14,13 +14,12 @@ function saludarDeNuevo() {
 }
 saludarDeNuevo();
 
-function calcularCostoServicioVoid(precioBase) {
+function calcularCostoServicio(precioBase) {
     return precioBase * 1.12;
 }
-
 function calcularCostoServicioVoid(precioBase) {
     console.log(precioBase * 1.12);
 }
 
-console.log(calcularCostoServicio(5));
-calcularCostoServicioVoid(7);
+console.log(calcularCostoServicio(5)); // retorna valor
+calcularCostoServicioVoid(7); // imprime sin retorno
